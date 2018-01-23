@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iSee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pps-Xd-aMT">
+                                <rect key="frame" x="39" y="547" width="298" height="37"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="21"/>
+                                <state key="normal" title="Send Information To Dropbox">
+                                    <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendToDropbox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hnO-3w-OmM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmA-pe-Lrm">
+                                <rect key="frame" x="39" y="491" width="298" height="37"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="21"/>
+                                <state key="normal" title="Connect To Dropbox">
+                                    <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="connectoToDropbox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cpt-h8-dfW"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NZh-lR-C82">
+                                <rect key="frame" x="39" y="629" width="298" height="2"/>
+                            </progressView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Incoming Data From iWatch" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G28-c5-L5y">
+                                <rect key="frame" x="39" y="293" width="297" height="171"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="p2x-6j-JUe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpm-Ah-2Qd">
+                                <rect key="frame" x="39" y="35" width="298" height="37"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="21"/>
+                                <state key="normal" title="Reset Application Data">
+                                    <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetAppData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7hB-Uo-V7y"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Last Sleep Information" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PW9-AK-s92">
+                                <rect key="frame" x="39" y="110" width="297" height="145"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="s30-Mg-rcD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="G28-c5-L5y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="293" id="1DJ-nz-hwb"/>
+                            <constraint firstItem="G28-c5-L5y" firstAttribute="centerX" secondItem="pps-Xd-aMT" secondAttribute="centerX" id="1F7-Gk-UrY"/>
+                            <constraint firstItem="G28-c5-L5y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4ym-hr-0oM"/>
+                            <constraint firstItem="G28-c5-L5y" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="39" id="5eZ-cQ-6Dq"/>
+                            <constraint firstItem="PW9-AK-s92" firstAttribute="top" secondItem="dpm-Ah-2Qd" secondAttribute="bottom" constant="38" id="6nU-60-6lo"/>
+                            <constraint firstItem="G28-c5-L5y" firstAttribute="trailing" secondItem="PW9-AK-s92" secondAttribute="trailing" id="JZi-tz-QXh"/>
+                            <constraint firstItem="G28-c5-L5y" firstAttribute="centerX" secondItem="NZh-lR-C82" secondAttribute="centerX" id="Mhd-1W-3WN"/>
+                            <constraint firstItem="G28-c5-L5y" firstAttribute="leading" secondItem="PW9-AK-s92" secondAttribute="leading" id="S53-hk-ajc"/>
+                            <constraint firstItem="G28-c5-L5y" firstAttribute="centerX" secondItem="mmA-pe-Lrm" secondAttribute="centerX" id="Ynm-Uq-iva"/>
+                            <constraint firstItem="G28-c5-L5y" firstAttribute="leading" secondItem="pps-Xd-aMT" secondAttribute="leading" id="b58-3g-4bs"/>
+                            <constraint firstItem="G28-c5-L5y" firstAttribute="centerX" secondItem="dpm-Ah-2Qd" secondAttribute="centerX" id="bDK-kw-ISD"/>
+                            <constraint firstItem="G28-c5-L5y" firstAttribute="leading" secondItem="dpm-Ah-2Qd" secondAttribute="leading" id="gzW-Ms-uaT"/>
+                            <constraint firstItem="mmA-pe-Lrm" firstAttribute="top" secondItem="G28-c5-L5y" secondAttribute="bottom" constant="27" id="nU4-50-vAn"/>
+                            <constraint firstItem="pps-Xd-aMT" firstAttribute="top" secondItem="mmA-pe-Lrm" secondAttribute="bottom" constant="19" id="qMS-yC-anO"/>
+                            <constraint firstItem="NZh-lR-C82" firstAttribute="top" secondItem="pps-Xd-aMT" secondAttribute="bottom" constant="45" id="sRL-sy-XHz"/>
+                            <constraint firstItem="G28-c5-L5y" firstAttribute="leading" secondItem="NZh-lR-C82" secondAttribute="leading" id="ufb-hX-WH3"/>
+                            <constraint firstItem="G28-c5-L5y" firstAttribute="leading" secondItem="mmA-pe-Lrm" secondAttribute="leading" id="w0b-Tw-HQr"/>
+                            <constraint firstItem="G28-c5-L5y" firstAttribute="top" secondItem="PW9-AK-s92" secondAttribute="bottom" constant="38" id="wFa-uL-aRR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="dropboxConnection" destination="mmA-pe-Lrm" id="xn6-Rq-6Qr"/>
+                        <outlet property="receiveTextField" destination="G28-c5-L5y" id="mHr-mL-tGb"/>
+                        <outlet property="sleepInfoTextField" destination="PW9-AK-s92" id="btB-9S-sL0"/>
+                        <outlet property="uploadProgressBar" destination="NZh-lR-C82" id="hi0-n3-2fl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>
