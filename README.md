@@ -2,7 +2,10 @@
 
 iOS Development Related : Sleep Monitoring
 
-1. Changed some files in Swix to make it compatible for WatchOS 4.0 and iOS 11.
+A zip-file of the complete project is uploaded on Dropbox (compiled for latest WatchOS 4.2 and iOS 11 updates). 
+Link: https://www.dropbox.com/s/jv4ken11ta9z8ck/iSee.zip?dl=0
+
+1. Changed some files in Swix to make it compatible for WatchOS 4.2 and iOS 11.
 2. OpenCV - Download the git repository. Build it for iOS. All other logs/notes are in the opencv.mm file. Basically, we have to make everything compatible with OpenCV which is compiled with Objective-C++ libraries and iOS/Watch libraries which are Objective-C as base, and on top Swift.
 3. Disable Documentation Comments in Build Phases in project settings, to get rid of unwanted errors.
 4. Include libc++ as a required framework to get rid of any C++ file not found related errors.
