@@ -16,6 +16,7 @@ Contributors: Kamran Ali, Alex X. Liu, Zhiming
 7. You need to make changes in info.plist in URL types field and LSApplicationQueriesSchemes to make DropBox to work with your Dropbox Developer “appKey” which you initialize in “AppDelegate.swift” file. These instructions are given on GitHub. [Dropbox is integrated with the app for seem-less data collection and upload, (Free) "dropbox-developer account" required.]
 8. Include libc++.tbd in linked libraries and frameworks. It is required for some Swix (https://github.com/stsievert/swix) stuff to work. Swix will require opencv2 framework.
 
+# License
 
 MIT License
 Copyright 2017 Kamran Ali, Alex X. Liu, Michigan State University
